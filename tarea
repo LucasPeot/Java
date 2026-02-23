@@ -3,18 +3,28 @@ package com.saron.prog1;
 import java.util.Scanner;
 public class Prog1 {
 
+    //Ejercicio de calcular el area
+
     public static void main(String[] args) {
      //1.- Pedir radio por teclado
      //2.- Calcular área base ao radio
      //3.- Mostrar o valor calculado
     Scanner scan = new Scanner (System.in);
     
+
+    // Pide un double
      double radio;
      System.out.print("Escribe un radio: ");
      radio = scan.nextDouble();
+     
+     //variable final PI
      final double PI =3.14;
+     
+     //Calculo
      double area;
      area = radio *radio * PI;
+     
+     //Imprime el resultado
      System.out.println("EL area del circulo es= " + area);
      System.out.println("Area= " + PI +  "*"  +  radio +  "*" + radio);
     }
